@@ -26,6 +26,13 @@
     <!-- Main body  -->
     <section class="container mt-5 p-2 bg-light rounded p-5">
         <h1 class="text-center">Our Best Products</h1>
+        <div id="loading_placeholder" class="d-none">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            </div>
         <div class="row" id="product-warper">
 
         </div>
@@ -33,24 +40,28 @@
     <section>
         
         <!-- Modal -->
-        <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="phoneDetailModalLabel"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div id="phone-details" class="modal-body">
-                        
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
+        <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Product Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </section>
+        <div class="modal-body">
+            <h1 id="modal_title"></h1>
+            <h3 id="modal_phone_brand"></h3>
+            <h3 id="modal_phone_born_date"></h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
     <!-- Import Javascript form Boststrap  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

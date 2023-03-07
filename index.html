@@ -16,15 +16,48 @@
                 Phone Hunter
               </a>
               <label for="search">
-                  <input class="rounded p-2 bg-light border border-2" type="text" id="search" placeholder="Search here you're phone">
-                  <input class="bg-success text-white border border-0 p-2 fs-5 rounded" type="button" value="Search">
+                  <input id="searchFiled" class="rounded p-2 bg-light border border-2" type="text" id="search" placeholder="Search here you're phone" value="apple">
+                  <input onclick="searchProssece()" id="searchBtn" class="bg-success text-white border border-0 p-2 fs-5 rounded" type="button" value="Search">
               </label>
             </div>
           </nav>
     </header>
+
+    <!-- Main body  -->
+    <section class="container mt-5 p-2 bg-light rounded p-5">
+        <h1 class="text-center">Our Best Products</h1>
+        <div class="row" id="product-warper">
+
+        </div>
+    </section>
+    <section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="phoneDetailModalLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="phone-details" class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Import Javascript form Boststrap  -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    
+
+    <!-- Import Function forom JS file  -->
+    <script src="./script/function.js"></script>
 </body>
 </html>
